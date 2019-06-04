@@ -1,20 +1,24 @@
 import { Injectable, OnInit } from '@angular/core';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
-import { PokemonApi, Result } from './pokemon.model';
+import { PokemonApi, PokeURL} from './pokemon.model';
+import { DashboardComponent } from './dashboard/dashboard.component';
 
 @Injectable({
   providedIn: 'root'
 })
 export class PokemonServiceService implements OnInit {
-  private pokeUrl = 'https://pokeapi.co/api/v2/pokemon';
+  private pokeApi = 'https://pokeapi.co/api/v2/pokemon/';
+  private pokeLimit = '?offset=386&limit=32';
   ngOnInit() {
-    console.log();
   }
   constructor(private http: HttpClient) { }
 
-  getPokemon() {
-    return this.http.get<PokemonApi>(this.pokeUrl);
+  getPokemon(): Observable<PokemonApi> {
+    return this.http.get<PokemonApi>(this.pokeApi + this.pokeLimit);
   }
 
+  getPokeName(name: string): Observable<PokeURL> {
+    return this.http.get<PokeURL>(this.pokeApi + name);
+  }
 }

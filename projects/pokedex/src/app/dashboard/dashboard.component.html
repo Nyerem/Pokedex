@@ -1,3 +1,6 @@
-<div>
-  <h1></h1>
+<div *ngFor ='let pokemons of pokemon' class='pokemondetails'>
+    
+<app-pokemonpictures [name] = pokemons.name>     
+</app-pokemonpictures>
+<span class="name">{{pokemons.name}}</span>
 </div>
