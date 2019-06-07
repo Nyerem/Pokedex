@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 import { PokemonServiceService } from '../pokemon-service.service';
-import { PokeURL, PokeSprite } from '../pokemon.model';
+import { Species } from '../pokemon.model';
 
 @Component({
   selector: 'app-pokemonpictures',
@@ -10,12 +10,22 @@ import { PokeURL, PokeSprite } from '../pokemon.model';
 export class PokemonpicturesComponent implements OnInit {
 // tslint:disable-next-line: no-input-rename
 @Input('name') pokeName: string;
-pokemonImg: PokeSprite;
-  constructor(private pokemonName: PokemonServiceService) { }
+pokemonImg: string ;
+pokesName: string;
+  constructor(private pokeDetails: PokemonServiceService) { }
 
   ngOnInit() {
     if (this.pokeName) {
-      this.pokemonName.getPokeName(this.pokeName).subscribe(pokemon => this.pokemonImg = pokemon.sprites);
-    }
+      this.getPokePic();
+      this.getPokeName();
+   }
+  }
+
+  getPokePic() {
+    this.pokeDetails.getPokeName(this.pokeName).subscribe(pokemonImg => this.pokemonImg = pokemonImg.sprites.front_default);
+  }
+
+  getPokeName() {
+    this.pokeDetails.getPokeName(this.pokeName).subscribe(pokeName => this.pokesName = pokeName.species.name);
   }
 }

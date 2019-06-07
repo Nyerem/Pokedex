@@ -1,3 +1,10 @@
-<div *ngIf = pokemonImg>
-  <img [src] = pokemonImg.front_default>
-  </div>
+<div *ngIf = "pokemonImg; else nullpokeImg">
+    <img [src] = pokemonImg>
+</div>
+<ng-template #nullpokeImg>
+    <div>
+        <img  src="assets/pokeball.png">
+    </div>
+</ng-template>
+<div class="name">{{pokesName}}</div>
+

@@ -3,11 +3,11 @@
     text-transform: capitalize;
     font-family: 'Annie Use Your Telescope', cursive;
     font-size: 150%;
-    margin: 8px;
-    display: inline-flex;
+    margin: 20px;
+    display: inline-flex; 
     width: 140px;
     height: 140px;
-    background-image: radial-gradient(azure 7%, navajowhite 93%);
+    background-image: radial-gradient(azure 10%, navajowhite 90%);
  /*   background: -webkit-gradient(linear, left top, right top, color-stop(50%,#141414), color-stop(50%,#333), color-stop(0%,#888));*/
     font-weight: bolder;
     border-radius: 25px;
@@ -16,12 +16,12 @@
     border: solid lightskyblue;
 } 
 .pokemondetails:hover {
-    background-image: azure !important; 
+    background-image: radial-gradient(navajowhite 1%,azure 99%);
 }
 
-.name {
-
+/* .name { 
     width: 140px;
     height: 140px;
     text-align: center;
-}
+    float: left;
+} */

@@ -9,7 +9,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 })
 export class PokemonServiceService implements OnInit {
   private pokeApi = 'https://pokeapi.co/api/v2/pokemon/';
-  private pokeLimit = '?offset=386&limit=32';
+  // private pokeLimit = '?offset=766&limit=20';
+  private pokeLimit = '?limit=964';
   ngOnInit() {
   }
   constructor(private http: HttpClient) { }

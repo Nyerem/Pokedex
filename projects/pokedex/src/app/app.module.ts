@@ -6,6 +6,8 @@ import { HeaderComponent } from './header/header.component';
 import { PokemonServiceService } from './pokemon-service.service';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { PokemonpicturesComponent } from './pokemonpictures/pokemonpictures.component';
+import { PokeRoutingModule } from './poke-routing.module';
+import { PokemondetailsComponent } from './pokemondetails/pokemondetails.component';
 
 
 @NgModule({
@@ -13,11 +15,13 @@ import { PokemonpicturesComponent } from './pokemonpictures/pokemonpictures.comp
     AppComponent,
     HeaderComponent,
     DashboardComponent,
-    PokemonpicturesComponent
+    PokemonpicturesComponent,
+    PokemondetailsComponent
   ],
   imports: [
     BrowserModule,
-    HttpClientModule
+    HttpClientModule,
+    PokeRoutingModule
   ],
   providers: [PokemonServiceService],
   bootstrap: [AppComponent]

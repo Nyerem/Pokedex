@@ -19,4 +19,5 @@ export class DashboardComponent implements OnInit {
     this.pokemonService.getPokemon()
     .subscribe(pokemon => this.pokemon = pokemon.results);
   }
+
 }
