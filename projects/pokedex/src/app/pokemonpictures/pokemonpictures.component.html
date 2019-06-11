@@ -1,10 +1,12 @@
+<div *ngIf = "pokesName">
+    <div class="name">{{pokesName.name}}</div>
+</div>
+
 <div *ngIf = "pokemonImg; else nullpokeImg">
-    <img [src] = pokemonImg>
+    <img [src] = pokemonImg>  
 </div>
 <ng-template #nullpokeImg>
-    <div>
-        <img  src="assets/pokeball.png">
-    </div>
+    <img src="assets/pokeball.png">
 </ng-template>
-<div class="name">{{pokesName}}</div>
+
 

@@ -1,3 +1,24 @@
-<div *ngIf = pokemonImg>
-  <img [src] = pokemonImg.front_default>
+<div *ngIf = "pokeStats" class="name">
+    {{name}}&nbsp;&nbsp;&nbsp;#{{pokeStats.id}}
+</div>
+
+<div class="titlecontainer">
+  <span class="picturecontainer">
+    <span *ngIf = "pokemonImg; else nullpokeImg">
+      <img [src] = pokemonImg>  
+    </span>
+    <ng-template #nullpokeImg>
+      <img src="assets/pokeball.png">
+    </ng-template>
+  </span>
+<div>
+  <span *ngIf = "pokeDesc" class="pokedetails">
+    {{pokeDesc}}
+  </span>
+  <span *ngIf = "pokeType" >
+      <span *ngFor ='let pokeTypes of pokeType' class="pokeType">
+        {{pokeTypes.type.name}}
+      </span>
+    </span>
+  </div>
 </div>

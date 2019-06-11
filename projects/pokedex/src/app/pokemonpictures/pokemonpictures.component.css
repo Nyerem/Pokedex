@@ -3,24 +3,17 @@ div {
     display: inline-block;
 }
 
-img{
-    position: absolute;
+img {
+    position: relative;
     height: 96px;
     width: 96px;
     left: 22px;
     /* float: left; */
 }
 
-/* .details {
-    width: 280px;
-    height: 140px;
-    float: right; 
-    text-align: center;
-} */
-
 .name{
     width: 140px;
-    height: 140px;
+    height: 30px;
     float: right;
     text-align: center;
 

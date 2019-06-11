@@ -10,15 +10,15 @@ import { Species } from '../pokemon.model';
 export class PokemonpicturesComponent implements OnInit {
 // tslint:disable-next-line: no-input-rename
 @Input('name') pokeName: string;
-pokemonImg: string ;
-pokesName: string;
+pokemonImg: string;
+pokesName: Species;
   constructor(private pokeDetails: PokemonServiceService) { }
 
   ngOnInit() {
-    if (this.pokeName) {
+    // if (this.pokeName) {
       this.getPokePic();
       this.getPokeName();
-   }
+  //  }
   }
 
   getPokePic() {
@@ -26,6 +26,6 @@ pokesName: string;
   }
 
   getPokeName() {
-    this.pokeDetails.getPokeName(this.pokeName).subscribe(pokeName => this.pokesName = pokeName.species.name);
+    this.pokeDetails.getPokeName(this.pokeName).subscribe(pokeName => this.pokesName = pokeName.species);
   }
 }
