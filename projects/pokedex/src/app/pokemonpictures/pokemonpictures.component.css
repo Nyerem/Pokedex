@@ -1,0 +1,21 @@
+div {
+    position: relative;
+    display: inline-block;
+}
+
+img {
+    position: relative;
+    height: 96px;
+    width: 96px;
+    left: 22px;
+    /* float: left; */
+}
+
+.name{
+    width: 140px;
+    height: 30px;
+    float: right;
+    text-align: center;
+
+}
+

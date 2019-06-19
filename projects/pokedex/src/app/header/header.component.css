@@ -1,0 +1,12 @@
+.header{
+    color: whitesmoke;
+    background-color: red;
+    text-align: center;
+    margin-top: 0%;
+    font-family: 'Annie Use Your Telescope', cursive;
+    font-size: 350%;
+    font-weight: bolder;
+    border-radius: 25px;
+    width:30%;
+    margin-left: 35%
+}

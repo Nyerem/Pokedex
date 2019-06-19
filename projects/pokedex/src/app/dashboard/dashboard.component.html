@@ -1,0 +1,3 @@
+<div *ngFor ='let pokemons of pokemon' class='pokemondetails' [routerLink]="['/pokemon/',pokemons.name]">
+<app-pokemonpictures [name] = pokemons.name></app-pokemonpictures>
+</div>

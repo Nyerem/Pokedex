@@ -1,0 +1,7 @@
+<div class="pagecontainer">
+<div *ngIf = "pokePages" >
+    <div *ngFor ='let pokePagess of pokePages' class="pokepages" (click)="onSelect(pokePagess)" [routerLink]="['/pokemon/page/',pokePagess]">
+      {{pokePagess}}
+</div>
+</div>
+</div>

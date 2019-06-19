@@ -1,0 +1,48 @@
+<div *ngIf = "pokeStats" class="name">
+    {{pokeName2}}&nbsp;&nbsp;&nbsp;#{{pokeStats.id}}
+</div>
+
+<div class="titlecontainer">
+  <span class="picturecontainer">
+    <span *ngIf = "pokemonImg; else nullpokeImg">
+      <img [src] = pokemonImg>  
+    </span>
+    <ng-template #nullpokeImg>
+      <img src="assets/pokeball.png">
+    </ng-template>
+  </span>
+
+  <div>
+  <span *ngIf = "pokeStat">
+      <div *ngFor ='let pokeStatss of pokeStat' class="pokeStats">
+        {{pokeStatss.stat.name}}: {{pokeStatss.base_stat}}
+      </div>
+  </span>
+  <div>
+  <span *ngIf = "pokeType" >
+      <span *ngFor ='let pokeTypes of pokeType' class={{pokeTypes.type.name}}>
+        {{pokeTypes.type.name}}
+      </span>
+    </span>
+  </div>
+</div>
+</div>
+<div class="desccontainer">
+  <span *ngIf = "pokeDesc">
+    PROFILE:<br>
+    Description:  <br>
+    {{pokeDesc[1]}}<br>
+    Category:  <br>
+    {{pokeGenera[0]}}<br>
+    Abilities:  <br>
+<span *ngIf = "pokeAbility" >
+    <span *ngFor ='let pokeAbilitys of pokeAbility' class="profilecontainer">
+        {{pokeAbilitys}} 
+    </span>
+  </span>
+
+
+  </span>
+</div>
+
+<!-- <app-pokemonspecies [name1] =  pokeName2></app-pokemonspecies> -->
