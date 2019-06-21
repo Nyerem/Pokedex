@@ -1,5 +1,6 @@
+
 <div *ngIf = "pokeStats" class="name">
-    {{pokeName2}}&nbsp;&nbsp;&nbsp;#{{pokeStats.id}}
+    {{pokeName}}&nbsp;&nbsp;&nbsp;#{{pokeStats.id}}
 </div>
 
 <div class="titlecontainer">
@@ -29,20 +30,16 @@
 </div>
 <div class="desccontainer">
   <span *ngIf = "pokeDesc">
-    PROFILE:<br>
-    Description:  <br>
-    {{pokeDesc[1]}}<br>
-    Category:  <br>
-    {{pokeGenera[0]}}<br>
+    {{pokeGenera[0]}}<br><br>
+    {{pokeDesc[1]}}<br><br>
     Abilities:  <br>
 <span *ngIf = "pokeAbility" >
-    <span *ngFor ='let pokeAbilitys of pokeAbility' class="profilecontainer">
-        {{pokeAbilitys}} 
+    <!-- <span *ngFor ='let pokeAbilitys of pokeAbility' class="profilecontainer"> -->
+      <span *ngFor ='let pokeAbilitys of pokeAbility' class="profilecontainer">
+           {{pokeAbilitys}} 
     </span>
   </span>
 
 
   </span>
 </div>
-
-<!-- <app-pokemonspecies [name1] =  pokeName2></app-pokemonspecies> -->

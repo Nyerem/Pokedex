@@ -20,6 +20,7 @@ export class PokemondetailsComponent implements OnInit {
   pokeType: Type[];
   pokeStat: Stat[];
   pokeName2: string;
+  pokeName: string;
   constructor(
     private route: ActivatedRoute,
     private pokeDetails: PokemonServiceService
@@ -39,6 +40,7 @@ export class PokemondetailsComponent implements OnInit {
       this.pokemonImg = pokemon.sprites.front_default;
       this.pokeStats = pokemon;
       this.pokeType = pokemon.types;
+      this.pokeName = pokemon.name;
       this.pokeStat = pokemon.stats.sort((a, b) => (a.stat.name > a.stat.name) ? 1 : -1);
       pokemon.abilities.forEach((ability: Ability) => {
         // tslint:disable-next-line:no-conditional-assignment

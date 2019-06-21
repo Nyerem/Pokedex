@@ -97,7 +97,7 @@ img {
 .profilecontainer{
     position: relative;
     display: inline-block;
-    font-size: 120%;
+    font-size: 110%;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
     text-transform: capitalize;
@@ -116,9 +116,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(184, 184, 208)
 }
@@ -132,9 +130,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(108, 143, 234)
 }
@@ -148,9 +144,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(247, 208, 48)
 }
@@ -164,9 +158,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(177, 160, 122)
 }
@@ -180,9 +172,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(235, 128, 55)
 }
@@ -196,9 +186,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(192, 56, 36)
 }
@@ -212,9 +200,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(169, 143, 244)
 }
@@ -228,9 +214,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(242, 152, 171)
 }
@@ -244,9 +228,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(119, 202, 70)
 }
@@ -260,9 +242,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(158, 66, 157)
 }
@@ -276,9 +256,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(223, 190, 111)
 }
@@ -292,9 +270,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(254, 86, 136)
 }
@@ -308,9 +284,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(181, 158, 51)
 }
@@ -324,9 +298,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(151, 217, 216)
 }
@@ -340,9 +312,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(169, 210, 46)
 }
@@ -356,9 +326,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(110, 53, 249)
 }
@@ -372,9 +340,7 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(114, 87, 154)
 }
@@ -388,9 +354,8 @@ img {
     width: 75px;
     font-weight: bolder;
     font-family: 'Annie Use Your Telescope', cursive;
-    border-width: 1px;
     border-radius: 10px;
-    border: solid rgb(1, 1, 65);
     text-align: center;
     background-color: rgb(113, 87, 70)
 }
+

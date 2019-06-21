@@ -29,7 +29,7 @@ i: number;
 
   onSelect(pokePagess: number) {
     this.pokemonService.getPokePage(pokePagess).subscribe(pokemonPage => {
-      this.pokemon = pokemonPage.results;
+      console.log('');
     });
   }
 }
