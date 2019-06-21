@@ -13,7 +13,7 @@ export class DashboardComponent implements OnInit {
   pokepage: number;
   constructor(
     private pokemonService: PokemonServiceService,
-    private route: ActivatedRoute 
+    private route: ActivatedRoute
     ) { }
 
   ngOnInit() {

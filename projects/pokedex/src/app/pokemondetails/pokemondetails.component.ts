@@ -33,7 +33,6 @@ export class PokemondetailsComponent implements OnInit {
     this.name = this.route.snapshot.paramMap.get('name');
     this.getPokeStats();
 
-
   }
   getPokeStats() {
     this.pokeDetails.getPokeName(this.name).subscribe(pokemon => {
